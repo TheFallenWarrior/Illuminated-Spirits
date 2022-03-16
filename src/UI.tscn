@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/UI.gd" type="Script" id=1]
+[ext_resource path="res://assets/ui/items.png" type="Texture" id=2]
+[ext_resource path="res://assets/ui/lifebar.png" type="Texture" id=3]
+[ext_resource path="res://assets/ui/staminabar.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui/underbar.png" type="Texture" id=5]
+
+[sub_resource type="Theme" id=4]
+
+[node name="UI" type="Control"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FPS" type="Label" parent="."]
+margin_left = 556.0
+margin_top = -4.0
+margin_right = 635.0
+margin_bottom = 10.0
+size_flags_stretch_ratio = 0.0
+text = "FPS DISPLAY"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_left = 12.0
+margin_top = 20.0
+margin_right = 308.0
+margin_bottom = 28.0
+min_value = 100.0
+value = 100.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 3 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StaminaBar" type="TextureProgress" parent="."]
+margin_left = 12.0
+margin_top = 44.0
+margin_right = 212.0
+margin_bottom = 52.0
+theme = SubResource( 4 )
+min_value = 100.0
+value = 100.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 4 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 0.701
+margin_left = 12.0
+margin_top = 308.0
+margin_right = 450.764
+margin_bottom = 612.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_stretch_ratio = 0.0
+texture = ExtResource( 2 )
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Player.gd" type="Script" id=1]
+[ext_resource path="res://src/Player.tres" type="Material" id=2]
+
+[sub_resource type="SphereMesh" id=1]
+radial_segments = 16
+rings = 8
+
+[sub_resource type="PrismMesh" id=2]
+
+[sub_resource type="SphereShape" id=3]
+
+[node name="Player" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.129409, 0.0965926, 0, -0.482963, 0.0258819, 0, 0.853179, -0.460249 )
+mesh = SubResource( 2 )
+material/0 = ExtResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 3 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.965135, 0.261751, 0, -0.261751, 0.965135, 0, 4.52532, 9.17313 )
+current = true

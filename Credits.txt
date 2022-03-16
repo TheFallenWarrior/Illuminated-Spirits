@@ -1,0 +1,25 @@
+Illuminated Spirits: Draconis Rubus Legenda
+A "game" by TheFallenWarrior
+
+Made in Godot Engine (c) 2007-2021 Juan Linietsky, Ariel Manzur & (c) 2014-2021 Godot Engine Contributors
+
+Character models and animations provided by Mixamo (c) Whoever owns Adobe these days
+
+
+Assets:
+
+"Willow Leaf Saber (Liu Ye Dao)" (https://skfb.ly/6T76Q) by Arnold Konrad is licensed under Creative Commons Attribution.
+
+"Potion icons" (https://opengameart.org/users/varkalandar) by Varkalandar is licensed under Creative Commons Attribution.
+
+"Weapons icons" (https://opengameart.org/content/weapons-icons) by elerya is licensed under Creative Commons Attribution.
+
+"Modular Dungeon" (https://skfb.ly/ot9I7) by DJMaesen is licensed under Creative Commons Attribution.
+
+"Vexillum" (https://skfb.ly/6SEQP) by Vlad Dyuhaaa is licensed under Creative Commons Attribution.
+
+"The tombstone" (https://skfb.ly/69rF8) by SebastianSosnowski is licensed under Creative Commons Attribution.
+
+"Common Table And Chair" (https://skfb.ly/6VryQ) by Mandrake is licensed under Creative Commons Attribution.
+
+Uncredited stuff were made by me.
