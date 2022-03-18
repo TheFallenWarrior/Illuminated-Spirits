@@ -121,8 +121,8 @@ script = ExtResource( 4 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.19735, 0 )
-light_energy = 0.4
-omni_range = 1.2
+light_energy = 0.6
+omni_range = 3.35
 
 [node name="Sword" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.42495, -0.345916, 0.836516, 0.25, 0.933013, 0.258819, -0.87001, 0.0991438, 0.482963, 0.0813628, 1.04556, -0.150552 )

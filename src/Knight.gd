@@ -9,7 +9,7 @@ onready var animationState = animationTree.get("parameters/playback")
 func _ready():
 	rng.randomize()
 	add_user_signal("health_changed")
-	speed = 0.8
+	speed = 1.5
 	acceleration = 5.0
 	HP = MHP
 
@@ -50,6 +50,6 @@ func _physics_process(delta):
 
 func _on_HitDetection_area_entered(area):
 	if area.name != "DetectRadius" and area.name != "AttackRadius":
-		HP -= rng.randi()%80
+		HP -= 50 + (rng.randi()%40)
 		emit_signal("health_changed", HP, MHP)
 		print(self.name+": oof i've been attacked by "+area.name)
