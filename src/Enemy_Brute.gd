@@ -13,7 +13,7 @@ func _ready():
 	HP = MHP
 	$HealthBar3D/Viewport/HealthBar.max_value = MHP
 	$HealthBar3D/Viewport/HealthBar.value = HP
-	speed = 0.5
+	speed = 1.2
 
 func choose_action():
 	match state:
@@ -81,3 +81,10 @@ func _on_AttackRadius_body_exited(body):
 func _on_DetectRadius_body_exited(body):
 	state = states.IDLE
 	print(self.name+": State changed to IDLE")
+
+
+func _on_DetectUpdate_body_entered(body):
+	if body.name != "StaticBody": 
+		state = states.CHASE
+		target = body.transform.origin
+		print(self.name+": State changed to CHASE, target: "+body.name)

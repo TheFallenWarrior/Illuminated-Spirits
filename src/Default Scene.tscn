@@ -65,7 +65,6 @@ shadow_contact = 0.2
 
 [node name="Muié" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.394, 0, -1.244 )
-visible = false
 collision_layer = 8
 collision_mask = 7
 mode = 0
@@ -75,9 +74,3 @@ transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.101, 0, 0.128 )
 
 [node name="Brute" parent="." instance=ExtResource( 3 )]
 transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 2.18929, 0, -1.36582 )
-
-[node name="Brute2" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 2.66664, 0, -1.79328 )
-
-[node name="Brute3" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.65455, 0, -1.72016 )

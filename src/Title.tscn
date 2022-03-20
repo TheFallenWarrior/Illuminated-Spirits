@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/ui/logo.png" type="Texture" id=1]
 [ext_resource path="res://assets/ui/title bg.png" type="Texture" id=2]
+[ext_resource path="res://src/Title.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/ui/perpetua.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+outline_size = 1
+outline_color = Color( 0, 0, 0, 0.501961 )
+use_filter = true
+font_data = SubResource( 1 )
 
 [node name="Title" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -22,11 +34,38 @@ __meta__ = {
 
 [node name="Logo" type="TextureRect" parent="."]
 margin_left = 24.0
-margin_top = 36.0
+margin_top = 68.0
 margin_right = 616.0
-margin_bottom = 196.0
+margin_bottom = 228.0
 texture = ExtResource( 1 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="VersionNumber" type="Label" parent="."]
+margin_left = 456.0
+margin_top = 468.0
+margin_right = 639.0
+margin_bottom = 482.0
+text = "Version alpha 0.1.9f92ffd"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 288.0
+margin_top = 320.0
+margin_right = 353.0
+margin_bottom = 360.0
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 2.0
+margin_right = 65.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 2 )
+text = "Start"
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

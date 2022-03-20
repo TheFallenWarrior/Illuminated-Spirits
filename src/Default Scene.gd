@@ -1,7 +1,9 @@
 extends Spatial
 
-# warning-ignore:return_value_discarded
 func _ready():
-	$UI/HealthBar.max_value = $Knight.MHP
-	$UI/HealthBar.value = $Knight.HP
+	$UI.update_health($Knight.HP, $Knight.MHP)
+	$UI.update_stamina($Knight.stamina, $Knight.Mstamina)
+	$UI.update_estus($Knight.estus)
 	$Knight.connect("health_changed", $UI, "update_health")
+	$Knight.connect("stamina_changed", $UI, "update_stamina")
+	$Knight.connect("estus_qty_changed", $UI, "update_estus")

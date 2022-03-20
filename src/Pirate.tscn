@@ -396,3 +396,4 @@ shape = SubResource( 4 )
 [node name="CollisionShape2" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0234673, 0 )
 shape = SubResource( 5 )
+disabled = true
