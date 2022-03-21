@@ -8,6 +8,8 @@ Character models and animations provided by Mixamo (c) Whoever owns Adobe these 
 
 Assets:
 
+"GAGE1" by FromSoftware PC Development Dept.
+
 "Seamless Texture Rockface Gray" (https://opengameart.org/content/seamless-texture-grey) by Exalted Man
 
 "Willow Leaf Saber (Liu Ye Dao)" (https://skfb.ly/6T76Q) by Arnold Konrad is licensed under Creative Commons Attribution.

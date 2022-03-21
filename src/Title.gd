@@ -1,5 +1,7 @@
 extends Control
 
+#fix this mess
+
 func loadlevel():
 	print("Level loaded or something idk")
 # warning-ignore:return_value_discarded
@@ -7,7 +9,7 @@ func loadlevel():
 
 # warning-ignore:return_value_discarded
 func _on_TextureButton_pressed():
-	print("?????")
+	#print("?????")
 	#$TextureButton/Label.text = "Loading"
 	#$Logo.visible = false
 	$TextureButton.visible = false

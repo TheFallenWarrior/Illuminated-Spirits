@@ -19,8 +19,8 @@ surfaces/0 = {
 }
 
 [sub_resource type="CapsuleShape" id=2]
-radius = 0.129292
-height = 0.59544
+radius = 0.0808242
+height = 0.576814
 
 [node name="Sword" type="Area"]
 
@@ -30,5 +30,5 @@ mesh = SubResource( 1 )
 material/0 = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( -0.49824, 0.795449, 1.17005, 0.74664, 1.20151, -0.498897, -1.20178, 0.416691, -0.795036, -0.873629, 0.222201, 0.419213 )
+transform = Transform( -0.49824, 0.856558, 1.12608, 0.74664, 1.17327, -0.562098, -1.20178, 0.373813, -0.816077, -0.794057, 0.196571, 0.3703 )
 shape = SubResource( 2 )
