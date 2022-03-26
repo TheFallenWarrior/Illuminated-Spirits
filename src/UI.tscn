@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://src/UI.gd" type="Script" id=1]
 [ext_resource path="res://assets/ui/items.png" type="Texture" id=2]
@@ -6,24 +6,24 @@
 [ext_resource path="res://assets/ui/staminabar.png" type="Texture" id=4]
 [ext_resource path="res://assets/ui/underbar.png" type="Texture" id=5]
 [ext_resource path="res://assets/ui/perpetua.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/ui/default.tres" type="Theme" id=7]
 
 [sub_resource type="Theme" id=4]
 
 [node name="UI" type="Control"]
 margin_left = 4.0
-margin_top = 4.0
-margin_right = 40.0
-margin_bottom = 40.0
+margin_right = 640.0
+margin_bottom = 480.0
+theme = ExtResource( 7 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="FPS" type="Label" parent="."]
-margin_left = 557.0
-margin_top = -4.0
-margin_right = 636.0
-margin_bottom = 10.0
+margin_left = 556.0
+margin_right = 635.0
+margin_bottom = 14.0
 size_flags_stretch_ratio = 0.0
 text = "FPS DISPLAY"
 align = 2
@@ -31,11 +31,45 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HealthBar" type="TextureProgress" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="."]
+modulate = Color( 0.862745, 0.862745, 0.862745, 0.752941 )
+margin_left = 524.0
+margin_top = 392.0
+margin_right = 604.0
+margin_bottom = 432.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoulsCount" type="Label" parent="."]
+margin_left = 532.0
+margin_top = 400.0
+margin_right = 601.0
+margin_bottom = 427.0
+custom_fonts/font = ExtResource( 6 )
+text = "99999"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Level" type="Label" parent="."]
 margin_left = 12.0
-margin_top = 20.0
-margin_right = 300.0
-margin_bottom = 28.0
+margin_top = 24.0
+margin_right = 60.0
+margin_bottom = 51.0
+custom_fonts/font = ExtResource( 6 )
+text = "999"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_left = 52.0
+margin_top = 24.0
+margin_right = 340.0
+margin_bottom = 32.0
 min_value = 30.0
 value = 100.0
 texture_under = ExtResource( 5 )
@@ -46,10 +80,10 @@ __meta__ = {
 }
 
 [node name="StaminaBar" type="TextureProgress" parent="."]
-margin_left = 12.0
-margin_top = 44.0
-margin_right = 228.0
-margin_bottom = 52.0
+margin_left = 52.0
+margin_top = 40.0
+margin_right = 268.0
+margin_bottom = 48.0
 theme = SubResource( 4 )
 min_value = 10.0
 value = 100.0
@@ -62,15 +96,14 @@ __meta__ = {
 
 [node name="TextureRect" type="TextureRect" parent="."]
 modulate = Color( 0.862745, 0.862745, 0.862745, 0.752941 )
-anchor_right = 0.701
 margin_left = 28.0
-margin_top = 308.0
-margin_right = 221.764
-margin_bottom = 452.0
+margin_top = 304.0
+margin_right = 252.0
+margin_bottom = 448.0
 size_flags_stretch_ratio = 0.0
 texture = ExtResource( 2 )
 expand = true
-stretch_mode = 1
+stretch_mode = 5
 __meta__ = {
 "_edit_use_anchors_": false
 }

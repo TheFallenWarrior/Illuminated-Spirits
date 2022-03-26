@@ -8,6 +8,10 @@ func update_stamina(stamina, max_stamina):
 	$StaminaBar.max_value = max_stamina
 	$StaminaBar.value = stamina
 
+func update_xp_level(xp, level):
+	$SoulsCount.text = str(xp)
+	$Level.text = str(level)
+
 func update_estus(estus):
 	$EstusCount.text = str(estus)
 

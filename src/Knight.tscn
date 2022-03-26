@@ -134,6 +134,7 @@ transform = Transform( -0.924305, 1.07118, -0.49824, 0.792872, 1.03145, 0.74664,
 
 [node name="CollisionShape" parent="Sword" index="1"]
 transform = Transform( -0.49824, 0.795449, 1.17005, 0.74664, 1.20151, -0.498897, -1.20178, 0.416691, -0.795036, -0.874634, 0.165853, 0.396423 )
+disabled = true
 
 [node name="Skeleton" type="Skeleton" parent="."]
 bones/0/name = "Hips"

@@ -2,7 +2,7 @@
 extends Actor
 class_name Battler
 
-var MHP: = 380 #Maximum HP
-var HP
-var Mstamina: = 120 #Maximum Stamina
+var mhp: = 380 #Default maximum HP
+var hp
+var mstamina: = 120 #Default maximum Stamina
 var stamina

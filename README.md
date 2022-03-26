@@ -17,3 +17,4 @@ Absolute Sadness. You must see it with your very eyes to believe it. It is belie
 - WASD / Arrow Keys / Gamepad left stick -- Move the character
 - Left click / E / Gamepad RT -- Attack
 - Spacebar / Gamepad X -- Roll
+- Z / Gamepad A -- Use health potion
